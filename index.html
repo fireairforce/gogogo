@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>聚焦两会 关注民生</title>
+<link rel="shortcut icon" href="/page/web/images/hd-favicon.ico" type="image/x-icon" /><link href="favicon.ico" href="/" rel="shortcut icon"/>
+<style type="text/css">
+*{margin:0; padding:0; text-decoration:none; border:0;}
+body{background-image:url(img/2.png); background-size:cover; transition:2s;}
+#box{width:70%; height:200px; margin:20px auto; box-shadow:0 0 20px #000 inset; transition:0.2s;}
+#box:hover{background-color:red; opacity: 0.7;}
+#box p{line-height:200px; text-align:center; font-size:72px; color:white;font-family: "微软雅黑";text-shadow: 5px 5px 5px #999999}
+#box a:hover p{color:black;} 
+#vice-box{width:70%; margin:20px auto; transition:0.2s;}
+#limit{width:100%; overflow:hidden;}
+#site{width:24%; height:150px; float:left; margin-left:0.5%; margin-right:0.5%; margin-top:5px; margin-bottom:5px; box-shadow:0 0 20px #000 inset; transition:1s;}
+#site:hover{background-color:red; opacity: 0.7;}
+#site p{line-height:150px; text-align:center; font-size:36px; color:white;}
+#site a:hover p{color:black;}
+#author{width:70%; height:50px; margin:0 auto;}
+#name{display:block; width:30%; line-height:50px; margin:0 auto; text-align:center; color:#000; font:15px; transition:2s; cursor:pointer;}
+#name:hover{color:black;}
+#MrH{position:relative; top:5px; width:70%; margin:0 auto; z-index:1;}
+#MrH img{position:relative; width:100%; height:0; z-index:1;}
+#MrH p{position:absolute; display:inline-block; background-color:#000; opacity:0.8; width:50px; height:25px; line-height:25px; text-align:center; bottom:5px; right:5px; z-index:10; color:#fff; cursor:pointer; transition:1s;}
+#MrH p:hover{opacity:1;}
+#button{display:inline-block; width:100px; height:50px; position:fixed; right:50px; top:20px; opacity:0.7;color:#fff; cursor:pointer;}
+#next{position:relative; float:right; width:50px; text-align:center; line-height:50px; font-size:25px; right:0; background-color:#000;}
+#next:hover{opacity:0.9;}
+#prev{position:relative; float:left; width:50px; text-align:center; line-height:50px; font-size:25px; left:0; background-color:#000;}
+#prev:hover{opacity:0.9;}
+</style>
+<script type="text/javascript">
+    var BGI=9;
+    window.onload=function anonymous(){
+    	var name=document.getElementById("name");
+		var hiden=document.getElementById("hiden");
+		var next=document.getElementById("next");
+		var prev=document.getElementById("prev");
+		var page=document.getElementById("page");
+        var box=document.getElementById("box");
+    	var Vbox=document.getElementById("vice-box");
+		var button=document.getElementById("button");
+		var name=document.getElementById("name"); 
+		var maxImage=19;
+		var height=0;
+		name.onclick=function drop(){
+			if(height<450){
+				height+=1;
+				document.getElementById("photo").style.height=height+"px";
+			}
+			setTimeout(drop,1);
+		}
+		
+		hiden.onclick=function cover(){
+			if(height>=0){
+				height-=1;
+				document.getElementById("photo").style.height=height+"px";
+			}
+			setTimeout(cover,1);
+		}
+		function width(){
+			if(document.body.offsetWidth<971){
+				box.style.width="970px";	
+				Vbox.style.width="970px";
+				button.style.right="0px";
+				name.style.width="290px";
+			}else{
+				box.style.width="70%";	
+				Vbox.style.width="70%";
+				button.style.right="50px";
+				name.style.width="30%";	
+			}	
+		}
+		setInterval(width,500);
+	}
+</script>
+</head>
+
+<body id="page">
+<div id="MrH">
+	<a href="http://user.qzone.qq.com/1842452856/main" target="_blank" ><img title="点击进入我的空间" id="photo" src="img/1.png"></a>
+    <p id="hiden">hiden</p>
+</div>
+<div id="box">
+	<a href="http://www.bh.gov.cn/gxw/contents/256/178620.html" target="_new"><p>聚焦两会 筑梦未来</p></a>
+</div>
+<div id="vice-box">
+	<div id="limit">
+    	<div id="site">
+        	<a href="http://wb.qdqss.cn/html/qdrb/20171101/qdrb280941.html" target="_blank"><p>富强</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.xinhuanet.com/politics/2017lh/2017-03/15/c_1120627849.htm" target="_blank"><p>民主</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.edu.cn/edu/zhuan_ti_lan_mu/lh/lhbg/201703/t20170317_1498647.shtml" target="_blank"><p>文明</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://npc.people.com.cn/n1/2017/0315/c14576-29147064.html" target="_blank"><p>和谐</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://lianghui.people.com.cn/2017/GB/411153/411546/index.html" target="_blank"><p>自由</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.edu.cn/edu/zhuan_ti_lan_mu/lh/rd/201803/t20180326_1591810.shtml" target="_blank"><p>平等</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.gamersky.com/" target="_blank"><p>公正</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.china.com.cn/lianghui/news/2018-03/07/content_50677897.shtml" target="_blank"><p>法治</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.china.com.cn/lianghui/news/2018-03/20/content_50727126.shtml" target="_blank"><p>爱国</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.ce.cn/xwzx/gnsz/szyw/201703/15/t20170315_21004330.shtml/" target="_blank"><p>敬业</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.ce.cn/ztpd/xwzt/zhibo/rdbmhh/index.shtml" target="_blank"><p>诚信</p></a>
+        </div>
+        <div id="site">
+        	<a href="http://www.002002.cn/page/web/lhzt/index.jsp/" target="_blank"><p>友善</p></a>
+        </div> 
+    </div>
+</div>
+<div id="author">
+	<p id="name">Made By Zoomdong<br>QQ:1344492820&nbsp;&nbsp;&nbsp;</p>
+</div>
+</body>
+</html>
